@@ -42,6 +42,8 @@
 
 ## Endpoints
 
+![Swagger documentation](Portal%20Microservice%20APIs%20-%20Swagger%20documentation.png)
+
 ### Authentication Service
 - **POST** `/sign-in`  
   **Request Body:** `UserCredentialsDTO`  
