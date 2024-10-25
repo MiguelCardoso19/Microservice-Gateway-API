@@ -31,6 +31,8 @@
 - **Gradle**
 - **Swagger**
 - **JSON Web Tokens (JWT)**
+- **Docker**
+- **Liquibase**
 
 
 ## Architecture
