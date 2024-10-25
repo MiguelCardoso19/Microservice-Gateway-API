@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: demo_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgre
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init-schemas.sql:/docker-entrypoint-initdb.d/init-schemas.sql
+
+  portal-microservice:
+    build:
+      context: ./PortalMicroservice/PortalMicroservice/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - authentication-microservice
+      - usersManagement-microservice
+
+  authentication-microservice:
+    build:
+      context: ./AuthenticationMicroservice/AuthenticationMicroservice/
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/demo_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgre
+    depends_on:
+      - db
+
+  usersManagement-microservice:
+    build:
+      context: UsersManagementMicroservice/UsersManagementMicroservice/
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/demo_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgre
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

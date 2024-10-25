@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct-processor/1.5.3.Final/dce418bedafd71ff8dd2cef15006c0fee788b073/mapstruct-processor-1.5.3.Final.jar" />
+        </processorPath>
+        <module name="com.example.Exercicio15.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Exercicio15.Exercicio15.main" target="21" />
+      <module name="Exercicio15.Exercicio15.main~1" target="21" />
+      <module name="Exercicio15.Exercicio15.test" target="21" />
+      <module name="Exercicio15.Exercicio15.test~1" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

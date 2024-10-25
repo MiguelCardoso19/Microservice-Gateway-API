@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="MiguelCardoso">
+        <insert tableName="user_account" schemaName="schema1">
+            <column name="id" value="4e0b2e55-4c5f-4c7a-b993-e3a4d06149e2"/>
+            <column name="name" value="John Miguel"/>
+            <column name="birthdate" value="1990/01/19"/>
+            <column name="phone_number" value="123456789"/>
+            <column name="email" value="john.miguel@example.com"/>
+            <column name="nif" value="123456789"/>
+            <column name="role" value="ADMIN"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="123e4567-e89b-12d3-a456-426614174000"/>
+            <column name="user_account_id" value="4e0b2e55-4c5f-4c7a-b993-e3a4d06149e2"/>
+            <column name="country" value="US"/>
+            <column name="street" value="123 Main St"/>
+            <column name="city" value="Springfield"/>
+            <column name="state" value="IL"/>
+            <column name="zip_code" value="62701"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="223e4567-e89b-12d3-a456-426614174001"/>
+            <column name="user_account_id" value="4e0b2e55-4c5f-4c7a-b993-e3a4d06149e2"/>
+            <column name="country" value="CA"/>
+            <column name="street" value="456 Oak St"/>
+            <column name="city" value="Toronto"/>
+            <column name="state" value="ON"/>
+            <column name="zip_code" value="M5H 2N2"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2" author="MiguelCardoso">
+        <insert tableName="user_account" schemaName="schema1">
+            <column name="id" value="5e0b2e55-4c5f-4c7a-b993-e3a4d06149e3"/>
+            <column name="name" value="Alice Johnson"/>
+            <column name="birthdate" value="1992/03/22"/>
+            <column name="phone_number" value="234567890"/>
+            <column name="email" value="alice.johnson@example.com"/>
+            <column name="nif" value="234567890"/>
+            <column name="role" value="USER"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="323e4567-e89b-12d3-a456-426614174002"/>
+            <column name="user_account_id" value="5e0b2e55-4c5f-4c7a-b993-e3a4d06149e3"/>
+            <column name="country" value="GB"/>
+            <column name="street" value="789 Birch St"/>
+            <column name="city" value="London"/>
+            <column name="state" value="ENG"/>
+            <column name="zip_code" value="SW1A 1AA"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="423e4567-e89b-12d3-a456-426614174003"/>
+            <column name="user_account_id" value="5e0b2e55-4c5f-4c7a-b993-e3a4d06149e3"/>
+            <column name="country" value="AU"/>
+            <column name="street" value="1010 Ash St"/>
+            <column name="city" value="Sydney"/>
+            <column name="state" value="NSW"/>
+            <column name="zip_code" value="2000"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="MiguelCardoso">
+        <insert tableName="user_account" schemaName="schema1">
+            <column name="id" value="6e0b2e55-4c5f-4c7a-b993-e3a4d06149e4"/>
+            <column name="name" value="Bob Smith"/>
+            <column name="birthdate" value="1985/05/15"/>
+            <column name="phone_number" value="345678901"/>
+            <column name="email" value="bob.smith@example.com"/>
+            <column name="nif" value="345678901"/>
+            <column name="role" value="USER"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="523e4567-e89b-12d3-a456-426614174004"/>
+            <column name="user_account_id" value="6e0b2e55-4c5f-4c7a-b993-e3a4d06149e4"/>
+            <column name="country" value="PT"/>
+            <column name="street" value="222 Cedar St"/>
+            <column name="city" value="Lisbon"/>
+            <column name="state" value="Lisboa"/>
+            <column name="zip_code" value="1000-001"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+
+        <insert tableName="address" schemaName="schema1">
+            <column name="id" value="623e4567-e89b-12d3-a456-426614174005"/>
+            <column name="user_account_id" value="6e0b2e55-4c5f-4c7a-b993-e3a4d06149e4"/>
+            <column name="country" value="ES"/>
+            <column name="street" value="333 Elm St"/>
+            <column name="city" value="Madrid"/>
+            <column name="state" value="Madrid"/>
+            <column name="zip_code" value="28001"/>
+            <column name="created_date" value="2024-10-11T10:00:00Z"/>
+            <column name="last_modified_date" value="2024-10-11T10:00:00Z"/>
+            <column name="created_by" value="liquibase"/>
+            <column name="last_modified_by" value="liquibase"/>
+            <column name="version" value="0"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

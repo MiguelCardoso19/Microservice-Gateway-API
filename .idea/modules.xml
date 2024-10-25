@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ApiManagerMicroservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ApiManagerMicroservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AuthenticationMicroservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AuthenticationMicroservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exercicio15.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Exercicio15.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MiguelCardoso_Exercicio16.iml" filepath="$PROJECT_DIR$/.idea/MiguelCardoso_Exercicio16.iml" />
+    </modules>
+  </component>
+</project>
