@@ -30,9 +30,10 @@
 - **Lombok**
 - **Gradle**
 - **Swagger**
-- **JSON Web Tokens (JWT)**
+- **JSON Web Token (JWT)**
 - **Docker**
 - **Liquibase**
+- **PostgreSQL**
 
 
 ## Architecture
