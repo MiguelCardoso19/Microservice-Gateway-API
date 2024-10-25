@@ -32,7 +32,7 @@
 - **Swagger**
 - **JSON Web Tokens (JWT)**
 - **Docker**
-- -**Liquibase**
+- **Liquibase**
 
 
 ## Architecture
